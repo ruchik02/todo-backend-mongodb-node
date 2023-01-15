@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo app</title>
+   <!-- fontawesome link -->
+   <script src="https://kit.fontawesome.com/6ff9a684f2.js" crossorigin="anonymous"></script>
+   <!-- css link external linked -->
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <!-- header -->
+      <div class="container">
+            <div class="topbar">
+            <h1>todos</h1>
+            </div>
+            <div id="body">
+               <div id="input">
+                   <span onclick="completedAll()" id="downarrow">
+                       <i class="arrow down" style="margin-left: 1rem;font-size: 1.5rem;"></i>
+                   </span>
+                   <div id="takeinput">
+                     <input type="text" class="add-todo" id="input-text" placeholder="What needs to be done?">
+                   </div>  
+               </div>
+               <div class="todos" id="todos">
+               </div>
+           </div>
+         <!-- add item -->
+         <div class="todos" id="todos">
+         </div>
+
+         <!-- footer -->
+         <div class="foot" id="footer">
+         <div class="footer">
+               <span id="todo-count"><strong id="count">0</strong> items left</span>
+               <ul class="filters">
+                  <li>
+                     <a href="#" id="all" class="selected" onclick="showAll()">All</a>
+                  </li>
+                  <li>
+                     <a href="#" id="active" class="acive" onclick="showActive()">Active</a>
+                  </li>
+                  <li>
+                     <a href="#" id="completed" class="completed" onclick="showCompleted()">Completed</a>
+                  </li>
+               </ul>
+               <button class="clear-completed" id="clear-completed" onclick="clearCompleted()">Clear completed</button>
+         </div>
+      </div>
+      </div>
+<script src="index.js"></script>
+</body>
+</html>
